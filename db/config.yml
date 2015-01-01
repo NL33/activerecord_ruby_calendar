@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  database: active_record_calendar_development
+
+test:
+  adapter: postgresql
+  database: active_record_calendar_test
