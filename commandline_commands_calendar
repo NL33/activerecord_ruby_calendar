@@ -17,7 +17,9 @@ source 'https://rubygems.org'
 
 gem 'activerecord' 
 gem 'active_record_migrations'
-gem 'pg'  
+gem 'pg' 
+gem 'validates_timeliness', '~> 3.0'
+gem 'textacular', '~> 3.0' 
 
 group :test do
   gem 'rspec'
@@ -50,5 +52,5 @@ $ rake db:create
 $ rake db:new_migration name=create_events
 $ rake db:new_migration name=create_todos
 $ rake db:new_migration name=create_notes
-  $ rake "db:new_migration[RemoveTitleFromNotes, title:string]"
+  $ rake "db:new_migration[RemoveTitleFromNotes, title:string]" 
   $ rake "db:new_migration[AddDescriptionToNotes, description:string]"
